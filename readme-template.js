@@ -1,4 +1,5 @@
 generateReadme = (data) => {
+  //create a badges function for #badges
     return `
     # ${data.title}   
   
@@ -6,7 +7,6 @@ generateReadme = (data) => {
     ${data.description}
 
     ## Badges
-    ${renderLicenseSection(data.license)}
 
     ## Table of Contents
   
@@ -46,7 +46,7 @@ generateReadme = (data) => {
   
     ## Questions
 
-    https://github.com/${data.githubUsername}
+    https://github.com/${data.github}
   
     ${data.emailAddress}
     
