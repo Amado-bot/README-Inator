@@ -1,8 +1,10 @@
 const fs = require('fs')
 const inquirer = require('inquirer')
+const writeFile = require('./generate-readme');
 
 
-const promtProject = () => {
+
+const promptUser = () => {
     return inquirer.prompt([
     {
         type: 'input',
@@ -95,4 +97,4 @@ const promtProject = () => {
             message: 'Add tests for your application'
         },
       ]);
-},
+};
