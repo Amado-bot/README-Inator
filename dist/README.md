@@ -4,7 +4,7 @@
     ![badge](https://img.shields.io/badge/license-NONE-orange)<br />
   
     ## Description
-    A node.js application that uses user input from inquirer to populate a README.md file for user repository
+    This is an application to make professional read me files quickly and effortlessly so you can focus on the actual code.
 
     ## Table of Contents
   
@@ -18,11 +18,11 @@
   
     ## Installation
   
-    run(npm install inquirer)
+    To use the app first run the 'npm install inquirer' and 'npm init'
   
     ## Usage
   
-    run 'node app" in the terminal and answer the quetions prompted.
+    To run the application run the command 'node app' in the terminal
   
     ## Credits
   

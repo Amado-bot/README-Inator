@@ -3,7 +3,10 @@
 A node.js application that uses user input from inquirer to populate a README.md file for user repository. There is an example created using the Generator in the 'dist' folder.
 
 The following gif shows the functionality of the application.
+
 ![README-inator](./src/images/readme-inator.gif)
+
+The full movie file showing functionality of the application can be found [here](https://drive.google.com/file/d/17buJoaTeDPK0XTvXr4VdnspZ3BUmJmIj/view)  
  
 ## User Story
   
