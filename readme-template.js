@@ -3,7 +3,7 @@ generateReadme = (data) => {
   return `
     # ${data.title}   
 
-    ![badge](https://img.shields.io/badge/license-${answers.license}-orange)<br />
+    ![badge](https://img.shields.io/badge/license-${data.license}-orange)<br />
   
     ## Description
     ${data.description}
