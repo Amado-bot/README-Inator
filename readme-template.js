@@ -1,12 +1,12 @@
 generateReadme = (data) => {
   //create a badges function for #badges
-    return `
+  return `
     # ${data.title}   
+
+    ![badge](https://img.shields.io/badge/license-${answers.license}-orange)<br />
   
     ## Description
     ${data.description}
-
-    ## Badges
 
     ## Table of Contents
   
@@ -51,5 +51,5 @@ generateReadme = (data) => {
     ${data.emailAddress}
     
     `;
-  }
-  module.exports = generateReadme;
+}
+module.exports = generateReadme;

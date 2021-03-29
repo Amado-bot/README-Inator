@@ -10,46 +10,22 @@ const promptUser = () => {
       type: 'input',
       name: 'title',
       message: 'What is the Title of your project? (Required)',
-      validate: nameInput => {
-        if (nameInput) {
-          return true;
-        } else {
-          console.log('You need to enter a project name!');
-          return false;
-        }
-      }
     },
     {
       type: 'input',
       name: 'description',
-      message: 'Provide a description of the project (Required)',
-      validate: descriptionInput => {
-        if (descriptionInput) {
-          return true;
-        } else {
-          console.log('Please provide a project description!');
-          return false;
-        }
-      }
+      message: 'Provide a description of the project (Required)'
     },
     {
       type: 'checkbox',
       name: 'license',
       message: 'Choose a license',
-      choices: ['none', 'MIT', 'ISC', 'MPL 2.0', 'GNU GPL v3']
+      choices: ['NONE', 'MIT', 'ISC', 'Open', 'Academic']
     },
     {
       type: 'input',
       name: 'installation',
-      message: 'please provide installation instructions!',
-      validate: installationInput => {
-        if (installationInput) {
-          return true;
-        } else {
-          console.log('please provide Instructions!')
-          return false;
-        }
-      }
+      message: 'please provide installation instructions!'
     },
     {
       type: 'input',
@@ -74,20 +50,21 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'github',
-      message: 'Enter your GitHub Username PLZ (Required)',
-      validate: githubInput => {
-        if (githubInput) {
-          return true;
-        } else {
-          console.log('Please enter your GitHub username!');
-          return false;
-        }
-      }
+      message: 'Enter your GitHub Username PLZ (Required)'
+    },
+    {
+      type: 'input',
+      name: 'emailAddress',
+      message: 'Provide email address in case the user has questions.'
     }
   ]);
 };
+function init() {
 promptUser()
-.then(answers => {
-  const data = generateReadme(answers)
-  writeFile(data);
-});
+  .then(answers => {
+    const data = generateReadme(answers)
+    writeFile(data);
+  });
+};
+
+init();
