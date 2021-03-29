@@ -51,6 +51,7 @@ THEN I am taken to the corresponding section of the README
 ## Usage 
   
 Run 'node app.js' in the terminal to start the question prompt.
+When you are finished your README will appear in the 'dist' folder.
 
 ## Contributing
 
