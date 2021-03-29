@@ -1,6 +1,9 @@
 ## Description
   
 A node.js application that uses user input from inquirer to populate a README.md file for user repository.
+
+The following gif shows the functionality of the application.
+![README-inator](./src/images/readme-inator.gif)
  
 ## User Story
   
